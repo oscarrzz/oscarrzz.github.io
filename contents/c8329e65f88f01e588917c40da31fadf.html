@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>true</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,14 +19,14 @@
 
       <!-- Name Title -->
 
-      <h1>(unnamed)</h1>
+      <h1>true</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLDependency"></span>
-          UMLDependency
+          <span class="node-icon staruml-icon icon-UMLMessage"></span>
+          UMLMessage
         </span>
         
       </section>
@@ -44,13 +44,16 @@
           <span class="label label-info"><a href='5b06b48b20b55504efe9a4ec8df83341.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Arquitectura</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='6955c7fb4bddf4bfc4e37f1b237ca699.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Componentes</a></span>
+          <span class="label label-info"><a href='f66afbc26022ecfbdc2d30bff02ae6af.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Escenarios arquitectónicos</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='6133e25b5088453bc098806d4f54d82c.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestión de subastas</a></span>
+          <span class="label label-info"><a href='5fda8cbde215fa7b8e319fbf261944a0.html'><span class='node-icon staruml-icon icon-UMLUseCase'></span>Realizar subasta</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='8479c6c0fd95696055b6682bbe63a093.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(Gestión de subastas→DAOSubasta)</a></span>
+          <span class="label label-info"><a href='b8c2411b287bab67c3127bdcecf59dd9.html'><span class='node-icon staruml-icon icon-UMLInteraction'></span>Interaction1</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='c8329e65f88f01e588917c40da31fadf.html'><span class='node-icon staruml-icon icon-UMLMessage'></span>true (gp→gp)</a></span>
         
       </section>
 
@@ -84,13 +87,13 @@
             <td width="50%">
               <h3>Source</h3>
               <ul class="nav nav-list">
-                <li><a href='6133e25b5088453bc098806d4f54d82c.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestión de subastas</a></a></li>
+                <li><a href='08690cb409559340cdd8f611b16d1a67.html'><span class='node-icon staruml-icon icon-UMLLifeline'></span>gp: Gestión de pujas</a></a></li>
               </ul>
             </td>
             <td width="50%">
               <h3>Target</h3>
               <ul class="nav nav-list">
-                <li><a href='fb79d6f84436e9eff15e1690f04cb025.html'><span class='node-icon staruml-icon icon-UMLInterface'></span>DAOSubasta</a></a></li>
+                <li><a href='08690cb409559340cdd8f611b16d1a67.html'><span class='node-icon staruml-icon icon-UMLLifeline'></span>gp: Gestión de pujas</a></a></li>
               </ul>
             </td>
           </tr>
@@ -238,7 +241,7 @@
     
     <tr>
         <td>name</td>
-        <td></td>
+        <td>true</td>
     </tr>
     
     
@@ -253,7 +256,7 @@
     
     <tr>
         <td>source</td>
-        <td><a href='6133e25b5088453bc098806d4f54d82c.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestión de subastas</a></td>
+        <td><a href='08690cb409559340cdd8f611b16d1a67.html'><span class='node-icon staruml-icon icon-UMLLifeline'></span>gp: Gestión de pujas</a></td>
     </tr>
     
     
@@ -262,7 +265,7 @@
     
     <tr>
         <td>target</td>
-        <td><a href='fb79d6f84436e9eff15e1690f04cb025.html'><span class='node-icon staruml-icon icon-UMLInterface'></span>DAOSubasta</a></td>
+        <td><a href='08690cb409559340cdd8f611b16d1a67.html'><span class='node-icon staruml-icon icon-UMLLifeline'></span>gp: Gestión de pujas</a></td>
     </tr>
     
     
@@ -288,8 +291,80 @@
     
     
     <tr>
-        <td>mapping</td>
+        <td>messageSort</td>
+        <td>synchCall</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>signature</td>
+        <td><span class='label label-info'>null</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>connector</td>
+        <td><span class='label label-info'>null</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>sequenceNumber</td>
         <td></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>arguments</td>
+        <td></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>assignmentTarget</td>
+        <td>subasta.abierta</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>guard</td>
+        <td></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>iteration</td>
+        <td></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isConcurrentIteration</td>
+        <td><span class='label label-info'>false</span></td>
     </tr>
     
     

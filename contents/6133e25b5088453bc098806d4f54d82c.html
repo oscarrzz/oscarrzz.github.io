@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Gestión de subastas</title>
+    <title>Gestión de usuario</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,7 +19,7 @@
 
       <!-- Name Title -->
 
-      <h1>Gestión de subastas</h1>
+      <h1>Gestión de usuario</h1>
 
       <!-- Type and Stereotype -->
 
@@ -47,7 +47,7 @@
           <span class="label label-info"><a href='6955c7fb4bddf4bfc4e37f1b237ca699.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Componentes</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='6133e25b5088453bc098806d4f54d82c.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestión de subastas</a></span>
+          <span class="label label-info"><a href='6133e25b5088453bc098806d4f54d82c.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Gestión de usuario</a></span>
         
       </section>
 
@@ -98,6 +98,8 @@
     <ul class="nav nav-list">
         
         <li><a href='c6e5257faa785541522374df5e0d3638.html'><span class='node-icon staruml-icon icon-UMLInterface'></span>IGestiónSubastas</a></li>
+        
+        <li><a href='29647f71dff8a4221686da5ce178edfe.html'><span class='node-icon staruml-icon icon-UMLInterface'></span>IUsuario</a></li>
         
     </ul>
 </section>
@@ -249,7 +251,7 @@
     
     <tr>
         <td>name</td>
-        <td>Gestión de subastas</td>
+        <td>Gestión de usuario</td>
     </tr>
     
     
@@ -345,9 +347,11 @@
     <h3>Dependencies</h3>
     <ul class="nav nav-list">
         
-        <li><a href='fb79d6f84436e9eff15e1690f04cb025.html'><span class='node-icon staruml-icon icon-UMLInterface'></span>DAOSubasta</a></li>
-        
         <li><a href='c6e5257faa785541522374df5e0d3638.html'><span class='node-icon staruml-icon icon-UMLInterface'></span>IGestiónSubastas</a></li>
+        
+        <li><a href='29647f71dff8a4221686da5ce178edfe.html'><span class='node-icon staruml-icon icon-UMLInterface'></span>IUsuario</a></li>
+        
+        <li><a href='52dfdf3519e85e732c9170fda274caac.html'><span class='node-icon staruml-icon icon-UMLInterface'></span>DAOUsuario</a></li>
         
     </ul>
 </section>
@@ -367,9 +371,11 @@
     <h3>Relationships</h3>
     <ul class="nav nav-list">
         
-        <li><a href='8479c6c0fd95696055b6682bbe63a093.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(Gestión de subastas→DAOSubasta)</a></li>
+        <li><a href='df8d0ffc96daa3f751b7db540bf34dd3.html'><span class='node-icon staruml-icon icon-UMLInterfaceRealization'></span>(Gestión de usuario→IGestiónSubastas)</a></li>
         
-        <li><a href='df8d0ffc96daa3f751b7db540bf34dd3.html'><span class='node-icon staruml-icon icon-UMLInterfaceRealization'></span>(Gestión de subastas→IGestiónSubastas)</a></li>
+        <li><a href='355ef23ff9c0c28fb1c5cb60bd37ecd3.html'><span class='node-icon staruml-icon icon-UMLInterfaceRealization'></span>(Gestión de usuario→IUsuario)</a></li>
+        
+        <li><a href='3acb71c800306d3ced1ffc542ceb0606.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(Gestión de usuario→DAOUsuario)</a></li>
         
     </ul>
 </section>
@@ -384,9 +390,11 @@
     <h3>Owned Elements</h3>
     <ul class="nav nav-list">
         
-        <li><a href='8479c6c0fd95696055b6682bbe63a093.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(Gestión de subastas→DAOSubasta)</a></li>
+        <li><a href='df8d0ffc96daa3f751b7db540bf34dd3.html'><span class='node-icon staruml-icon icon-UMLInterfaceRealization'></span>(Gestión de usuario→IGestiónSubastas)</a></li>
         
-        <li><a href='df8d0ffc96daa3f751b7db540bf34dd3.html'><span class='node-icon staruml-icon icon-UMLInterfaceRealization'></span>(Gestión de subastas→IGestiónSubastas)</a></li>
+        <li><a href='355ef23ff9c0c28fb1c5cb60bd37ecd3.html'><span class='node-icon staruml-icon icon-UMLInterfaceRealization'></span>(Gestión de usuario→IUsuario)</a></li>
+        
+        <li><a href='3acb71c800306d3ced1ffc542ceb0606.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(Gestión de usuario→DAOUsuario)</a></li>
         
     </ul>
 </section>
