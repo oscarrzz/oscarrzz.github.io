@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Selección de trabajo</title>
+    <title>estaActiva(subasta)</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,14 +19,14 @@
 
       <!-- Name Title -->
 
-      <h1>Selección de trabajo</h1>
+      <h1>estaActiva(subasta)</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLState"></span>
-          UMLState
+          <span class="node-icon staruml-icon icon-UMLAction"></span>
+          UMLAction
         </span>
         
       </section>
@@ -44,16 +44,16 @@
           <span class="label label-info"><a href='3dbe7125716602b9ba1df3d6017b5835.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Diseño</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='67955e48a8ea1d5f3609344192e2b47a.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Subasta</a></span>
+          <span class="label label-info"><a href='e426f54e4403475f8526b20643a37f03.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Cliente</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='d630c9ac6beff9889145907ff07454a7.html'><span class='node-icon staruml-icon icon-UMLStateMachine'></span>StateMachine</a></span>
+          <span class="label label-info"><a href='421963894f772ff2419180a8b845659f.html'><span class='node-icon staruml-icon icon-UMLOperation'></span>subastasActivas</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='4d49aac229c30a3ef0be188372a04f61.html'><span class='node-icon staruml-icon icon-UMLRegion'></span>(Region)</a></span>
+          <span class="label label-info"><a href='79c984f0cf925efdbf06e8c72887026b.html'><span class='node-icon staruml-icon icon-UMLActivity'></span>Actividad Subastas Activas</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='a11f12d3d3345463a69ea7de83e3b630.html'><span class='node-icon staruml-icon icon-UMLState'></span>Selección de trabajo</a></span>
+          <span class="label label-info"><a href='5bbb9a736601af433ce90d3e222e35f0.html'><span class='node-icon staruml-icon icon-UMLAction'></span>estaActiva(subasta)</a></span>
         
       </section>
 
@@ -150,6 +150,44 @@
       <!-- Action -->
 
       
+        
+        
+<section class="element-list">
+    <h3>Inputs</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='8f1a0d425680fb70d8d3fb6965f2e474.html'><span class='node-icon staruml-icon icon-UMLInputPin'></span>subasta</a></li>
+        
+    </ul>
+</section>
+
+
+
+        
+        
+<section class="element-list">
+    <h3>Outputs</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='c7cecccd3b4362d9eacb5ca23914b126.html'><span class='node-icon staruml-icon icon-UMLOutputPin'></span>estado</a></li>
+        
+    </ul>
+</section>
+
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
 
       <!-- Interaction -->
 
@@ -174,63 +212,8 @@
       <!-- State -->
 
       
-        
-        
-<section class="element-list">
-    <h3>Entry Activities</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='7958b3463a6933b6c1b88f7f4e8dd970.html'><span class='node-icon staruml-icon icon-UMLOpaqueBehavior'></span>trabajo=seleccionarTrabajo(cliente);intentos++</a></li>
-        
-    </ul>
-</section>
-
-
-
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-      
 
       <!-- Vertex -->
-
-      
-        
-        
-<section class="element-list">
-    <h3>Incoming Transitions</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='316a613a25fac511b39177c6d0f8dec2.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>(→Selección de trabajo)</a></li>
-        
-    </ul>
-</section>
-
-
-
-        
-        
-<section class="element-list">
-    <h3>Outgoing Transitions</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='113281aef04361058347b1f18f240b7d.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>(Selección de trabajo→Subasta abierta)</a></li>
-        
-    </ul>
-</section>
-
 
       
 
@@ -277,7 +260,7 @@
     
     <tr>
         <td>name</td>
-        <td>Selección de trabajo</td>
+        <td>estaActiva(subasta)</td>
     </tr>
     
     
@@ -310,6 +293,13 @@
     
     
     
+    <tr>
+        <td>kind</td>
+        <td>opaque</td>
+    </tr>
+    
+    
+    
     
     
     
@@ -319,9 +309,56 @@
     
     
     <tr>
-        <td>submachine</td>
+        <td>target</td>
         <td><span class='label label-info'>null</span></td>
     </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>subactivity</td>
+        <td><span class='label label-info'>null</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isLocallyReentrant</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isSynchronous</td>
+        <td><span class='label label-info'>true</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>language</td>
+        <td></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>body</td>
+        <td></td>
+    </tr>
+    
+    
     
     
     
@@ -355,17 +392,6 @@
 
       
       
-<section class="element-list">
-    <h3>Relationships</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='316a613a25fac511b39177c6d0f8dec2.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>(→Selección de trabajo)</a></li>
-        
-        <li><a href='113281aef04361058347b1f18f240b7d.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>(Selección de trabajo→Subasta abierta)</a></li>
-        
-    </ul>
-</section>
-
 
 
       <!-- Owned Elements -->
