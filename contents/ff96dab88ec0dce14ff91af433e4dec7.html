@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Abierta</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,14 +19,14 @@
 
       <!-- Name Title -->
 
-      <h1>(unnamed)</h1>
+      <h1>Abierta</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLTransition"></span>
-          UMLTransition
+          <span class="node-icon staruml-icon icon-UMLState"></span>
+          UMLState
         </span>
         
       </section>
@@ -53,7 +53,7 @@
           <span class="label label-info"><a href='4d49aac229c30a3ef0be188372a04f61.html'><span class='node-icon staruml-icon icon-UMLRegion'></span>(Region)</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='316a613a25fac511b39177c6d0f8dec2.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>(→Selección de trabajo)</a></span>
+          <span class="label label-info"><a href='ff96dab88ec0dce14ff91af433e4dec7.html'><span class='node-icon staruml-icon icon-UMLState'></span>Abierta</a></span>
         
       </section>
 
@@ -80,25 +80,6 @@
 
       <!-- Directed Relationship -->
 
-      
-      <section class="element-list">
-        <table width="100%">
-          <tr>
-            <td width="50%">
-              <h3>Source</h3>
-              <ul class="nav nav-list">
-                <li><a href='02f379c0c4051ca2fdda098661297e08.html'><span class='node-icon staruml-icon icon-UMLInitialState'></span>(Pseudostate)</a></a></li>
-              </ul>
-            </td>
-            <td width="50%">
-              <h3>Target</h3>
-              <ul class="nav nav-list">
-                <li><a href='a11f12d3d3345463a69ea7de83e3b630.html'><span class='node-icon staruml-icon icon-UMLState'></span>Selección de trabajo</a></a></li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </section>
       
 
       <!-- Undirected Relationship -->
@@ -193,29 +174,66 @@
       <!-- State -->
 
       
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
 
       <!-- Vertex -->
 
       
-
-      <!-- Transition -->
-
-      
         
         
+<section class="element-list">
+    <h3>Incoming Transitions</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='a283671e70411f47212914926d401189.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>pujar(puja: Puja) / numPujas++ (Abierta→Abierta)</a></li>
+        
+        <li><a href='be9df641ed0e5cc4f7cf3f5cdc6d51ff.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>abrirSubasta() (Creada→Abierta)</a></li>
+        
+        <li><a href='2a54de12a5548c86b87509fb1d37fd63.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>seleccionarTrabajo(trabajo: Trabajo) (Abierta→Abierta)</a></li>
+        
+    </ul>
+</section>
+
 
 
         
         
 <section class="element-list">
-    <h3>Effects</h3>
+    <h3>Outgoing Transitions</h3>
     <ul class="nav nav-list">
         
-        <li><a href='8f9d8614f37fe0b59a0f2718af719200.html'><span class='node-icon staruml-icon icon-UMLOpaqueBehavior'></span>intentos=0</a></li>
+        <li><a href='a283671e70411f47212914926d401189.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>pujar(puja: Puja) / numPujas++ (Abierta→Abierta)</a></li>
+        
+        <li><a href='f2bff8689f1282b3946728fe6fd056cd.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>finalizarSubasta() (Abierta→Cerrada)</a></li>
+        
+        <li><a href='2a54de12a5548c86b87509fb1d37fd63.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>seleccionarTrabajo(trabajo: Trabajo) (Abierta→Abierta)</a></li>
         
     </ul>
 </section>
 
+
+      
+
+      <!-- Transition -->
 
       
 
@@ -258,7 +276,7 @@
     
     <tr>
         <td>name</td>
-        <td></td>
+        <td>Abierta</td>
     </tr>
     
     
@@ -266,24 +284,6 @@
     
     
     
-    
-    
-    
-    
-    
-    <tr>
-        <td>source</td>
-        <td><a href='02f379c0c4051ca2fdda098661297e08.html'><span class='node-icon staruml-icon icon-UMLInitialState'></span>(Pseudostate)</a></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>target</td>
-        <td><a href='a11f12d3d3345463a69ea7de83e3b630.html'><span class='node-icon staruml-icon icon-UMLState'></span>Selección de trabajo</a></td>
-    </tr>
     
     
     
@@ -307,21 +307,20 @@
     
     
     
-    <tr>
-        <td>kind</td>
-        <td>external</td>
-    </tr>
+    
+    
+    
+    
+    
     
     
     
     
     
     <tr>
-        <td>guard</td>
-        <td></td>
+        <td>submachine</td>
+        <td><span class='label label-info'>null</span></td>
     </tr>
-    
-    
     
     
     
@@ -338,11 +337,38 @@
       <!-- Constraints, Dependencies, Dependants -->
 
       
+        
+        
+
+
+        
+        
+
+
+        
+        
+
+      
 
       <!-- Relationships -->
 
       
       
+<section class="element-list">
+    <h3>Relationships</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='a283671e70411f47212914926d401189.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>pujar(puja: Puja) / numPujas++ (Abierta→Abierta)</a></li>
+        
+        <li><a href='f2bff8689f1282b3946728fe6fd056cd.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>finalizarSubasta() (Abierta→Cerrada)</a></li>
+        
+        <li><a href='be9df641ed0e5cc4f7cf3f5cdc6d51ff.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>abrirSubasta() (Creada→Abierta)</a></li>
+        
+        <li><a href='2a54de12a5548c86b87509fb1d37fd63.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>seleccionarTrabajo(trabajo: Trabajo) (Abierta→Abierta)</a></li>
+        
+    </ul>
+</section>
+
 
 
       <!-- Owned Elements -->

@@ -173,13 +173,15 @@
     <h3>Vertices</h3>
     <ul class="nav nav-list">
         
-        <li><a href='a11f12d3d3345463a69ea7de83e3b630.html'><span class='node-icon staruml-icon icon-UMLState'></span>Selección de trabajo</a></li>
+        <li><a href='cb8f37adda8b2ca7d9406735bb5ecff3.html'><span class='node-icon staruml-icon icon-UMLInitialState'></span>(Pseudostate)</a></li>
         
-        <li><a href='02f379c0c4051ca2fdda098661297e08.html'><span class='node-icon staruml-icon icon-UMLInitialState'></span>(Pseudostate)</a></li>
+        <li><a href='ff96dab88ec0dce14ff91af433e4dec7.html'><span class='node-icon staruml-icon icon-UMLState'></span>Abierta</a></li>
         
-        <li><a href='d49311473bb182b51bc787308c3dc295.html'><span class='node-icon staruml-icon icon-UMLState'></span>Subasta abierta</a></li>
+        <li><a href='7e5da8c1cea48bf791e80d73af0130ca.html'><span class='node-icon staruml-icon icon-UMLState'></span>Cerrada</a></li>
         
-        <li><a href='91d93871a1c391f7e7782e1c4b3be99b.html'><span class='node-icon staruml-icon icon-UMLState'></span>Subasta cerrada</a></li>
+        <li><a href='a9d781fd75d79988a54a0f234f4a74c0.html'><span class='node-icon staruml-icon icon-UMLState'></span>Archivada</a></li>
+        
+        <li><a href='9edafa8812f0686044891a8ef1dfa0e7.html'><span class='node-icon staruml-icon icon-UMLState'></span>Creada</a></li>
         
     </ul>
 </section>
@@ -192,13 +194,17 @@
     <h3>Transitions</h3>
     <ul class="nav nav-list">
         
-        <li><a href='316a613a25fac511b39177c6d0f8dec2.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>(→Selección de trabajo)</a></li>
+        <li><a href='a283671e70411f47212914926d401189.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>pujar(puja: Puja) / numPujas++ (Abierta→Abierta)</a></li>
         
-        <li><a href='113281aef04361058347b1f18f240b7d.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>(Selección de trabajo→Subasta abierta)</a></li>
+        <li><a href='f2bff8689f1282b3946728fe6fd056cd.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>finalizarSubasta() (Abierta→Cerrada)</a></li>
         
-        <li><a href='e27bd52013ef22c821f935a39da3f775.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>(Subasta abierta→Subasta cerrada)</a></li>
+        <li><a href='b8e03dc0bb5a8a19be305ec5de3d3731.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>seleccionarGanador(ganador: Trabajador) (Cerrada→Archivada)</a></li>
         
-        <li><a href='e6b4e60424558ef795957924a8655c9a.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>(Subasta abierta→Subasta abierta)</a></li>
+        <li><a href='be9df641ed0e5cc4f7cf3f5cdc6d51ff.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>abrirSubasta() (Creada→Abierta)</a></li>
+        
+        <li><a href='2a54de12a5548c86b87509fb1d37fd63.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>seleccionarTrabajo(trabajo: Trabajo) (Abierta→Abierta)</a></li>
+        
+        <li><a href='978e3a001cb892170d5c6254e58dc4b8.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>(→Creada)</a></li>
         
     </ul>
 </section>

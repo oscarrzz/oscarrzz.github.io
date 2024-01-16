@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Subasta cerrada</title>
+    <title></title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,15 +19,17 @@
 
       <!-- Name Title -->
 
-      <h1>Subasta cerrada</h1>
+      <h1>(unnamed)</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLState"></span>
-          UMLState
+          <span class="node-icon staruml-icon icon-UMLDependency"></span>
+          UMLDependency
         </span>
+        
+          <span style="margin-left: 10px" class="alert alert-info">«manifest»</span>
         
       </section>
 
@@ -41,19 +43,16 @@
           <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>HandyHelp</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='3dbe7125716602b9ba1df3d6017b5835.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Diseño</a></span>
+          <span class="label label-info"><a href='5b06b48b20b55504efe9a4ec8df83341.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Arquitectura</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='67955e48a8ea1d5f3609344192e2b47a.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Subasta</a></span>
+          <span class="label label-info"><a href='a36bcccbabbfe4334c1dff13531ba188.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Despliegue</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='d630c9ac6beff9889145907ff07454a7.html'><span class='node-icon staruml-icon icon-UMLStateMachine'></span>StateMachine</a></span>
+          <span class="label label-info"><a href='c55d2fd2cc14088c0476901fad8c66c2.html'><span class='node-icon staruml-icon icon-UMLArtifact'></span>BaseDatos.sql</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='4d49aac229c30a3ef0be188372a04f61.html'><span class='node-icon staruml-icon icon-UMLRegion'></span>(Region)</a></span>
-        
-          <span>::</span>
-          <span class="label label-info"><a href='91d93871a1c391f7e7782e1c4b3be99b.html'><span class='node-icon staruml-icon icon-UMLState'></span>Subasta cerrada</a></span>
+          <span class="label label-info"><a href='7960ddefdb3382d10936a2977b277b4c.html'><span class='node-icon staruml-icon icon-UMLDependency'></span>(BaseDatos.sql→Datos de Usuarios)</a></span>
         
       </section>
 
@@ -80,6 +79,25 @@
 
       <!-- Directed Relationship -->
 
+      
+      <section class="element-list">
+        <table width="100%">
+          <tr>
+            <td width="50%">
+              <h3>Source</h3>
+              <ul class="nav nav-list">
+                <li><a href='c55d2fd2cc14088c0476901fad8c66c2.html'><span class='node-icon staruml-icon icon-UMLArtifact'></span>BaseDatos.sql</a></a></li>
+              </ul>
+            </td>
+            <td width="50%">
+              <h3>Target</h3>
+              <ul class="nav nav-list">
+                <li><a href='e0c54ca2f73d57948e62b82990ad6279.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Datos de Usuarios</a></a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </section>
       
 
       <!-- Undirected Relationship -->
@@ -174,45 +192,8 @@
       <!-- State -->
 
       
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-      
 
       <!-- Vertex -->
-
-      
-        
-        
-<section class="element-list">
-    <h3>Incoming Transitions</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='e27bd52013ef22c821f935a39da3f775.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>(Subasta abierta→Subasta cerrada)</a></li>
-        
-    </ul>
-</section>
-
-
-
-        
-        
 
       
 
@@ -259,7 +240,7 @@
     
     <tr>
         <td>name</td>
-        <td>Subasta cerrada</td>
+        <td></td>
     </tr>
     
     
@@ -273,8 +254,26 @@
     
     
     <tr>
+        <td>source</td>
+        <td><a href='c55d2fd2cc14088c0476901fad8c66c2.html'><span class='node-icon staruml-icon icon-UMLArtifact'></span>BaseDatos.sql</a></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>target</td>
+        <td><a href='e0c54ca2f73d57948e62b82990ad6279.html'><span class='node-icon staruml-icon icon-UMLComponent'></span>Datos de Usuarios</a></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
         <td>stereotype</td>
-        <td><span class='label label-info'>null</span></td>
+        <td>manifest</td>
     </tr>
     
     
@@ -290,22 +289,10 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <tr>
-        <td>submachine</td>
-        <td><span class='label label-info'>null</span></td>
+        <td>mapping</td>
+        <td></td>
     </tr>
-    
-    
     
     
     
@@ -320,32 +307,11 @@
       <!-- Constraints, Dependencies, Dependants -->
 
       
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-      
 
       <!-- Relationships -->
 
       
       
-<section class="element-list">
-    <h3>Relationships</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='e27bd52013ef22c821f935a39da3f775.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>(Subasta abierta→Subasta cerrada)</a></li>
-        
-    </ul>
-</section>
-
 
 
       <!-- Owned Elements -->

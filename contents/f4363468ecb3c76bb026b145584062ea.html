@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>servidor</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,15 +19,17 @@
 
       <!-- Name Title -->
 
-      <h1>(unnamed)</h1>
+      <h1>servidor</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLTransition"></span>
-          UMLTransition
+          <span class="node-icon staruml-icon icon-UMLAssociationEnd"></span>
+          UMLAssociationEnd
         </span>
+        
+          <span style="margin-left: 10px" class="alert alert-info">«»</span>
         
       </section>
 
@@ -41,19 +43,19 @@
           <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>HandyHelp</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='3dbe7125716602b9ba1df3d6017b5835.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Diseño</a></span>
+          <span class="label label-info"><a href='5b06b48b20b55504efe9a4ec8df83341.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Arquitectura</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='67955e48a8ea1d5f3609344192e2b47a.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Subasta</a></span>
+          <span class="label label-info"><a href='a36bcccbabbfe4334c1dff13531ba188.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Despliegue</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='d630c9ac6beff9889145907ff07454a7.html'><span class='node-icon staruml-icon icon-UMLStateMachine'></span>StateMachine</a></span>
+          <span class="label label-info"><a href='9b30f3d88de336899dec77a9229319d3.html'><span class='node-icon staruml-icon icon-UMLNode'></span>Servidor</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='4d49aac229c30a3ef0be188372a04f61.html'><span class='node-icon staruml-icon icon-UMLRegion'></span>(Region)</a></span>
+          <span class="label label-info"><a href='d7c17f48693cce903c2161dd2468ff5e.html'><span class='node-icon staruml-icon icon-UMLCommunicationPath'></span>(Servidor—Servidor Datos cifrados)</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='e27bd52013ef22c821f935a39da3f775.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>(Subasta abierta→Subasta cerrada)</a></span>
+          <span class="label label-info"><a href='f4363468ecb3c76bb026b145584062ea.html'><span class='node-icon staruml-icon icon-UMLAssociationEnd'></span>servidor</a></span>
         
       </section>
 
@@ -80,25 +82,6 @@
 
       <!-- Directed Relationship -->
 
-      
-      <section class="element-list">
-        <table width="100%">
-          <tr>
-            <td width="50%">
-              <h3>Source</h3>
-              <ul class="nav nav-list">
-                <li><a href='d49311473bb182b51bc787308c3dc295.html'><span class='node-icon staruml-icon icon-UMLState'></span>Subasta abierta</a></a></li>
-              </ul>
-            </td>
-            <td width="50%">
-              <h3>Target</h3>
-              <ul class="nav nav-list">
-                <li><a href='91d93871a1c391f7e7782e1c4b3be99b.html'><span class='node-icon staruml-icon icon-UMLState'></span>Subasta cerrada</a></a></li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </section>
       
 
       <!-- Undirected Relationship -->
@@ -201,32 +184,6 @@
       <!-- Transition -->
 
       
-        
-        
-<section class="element-list">
-    <h3>Triggers</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='56fad27cb059fbfc5d407be6664b9b84.html'><span class='node-icon staruml-icon icon-UMLEvent'></span>at(fechaFin)</a></li>
-        
-    </ul>
-</section>
-
-
-
-        
-        
-<section class="element-list">
-    <h3>Effects</h3>
-    <ul class="nav nav-list">
-        
-        <li><a href='1b8c875c55bc265133c1713bb6bfa6c8.html'><span class='node-icon staruml-icon icon-UMLOpaqueBehavior'></span>ganador=seleccionarGanador()</a></li>
-        
-    </ul>
-</section>
-
-
-      
 
       <!-- Data Model (ERD) -->
 
@@ -267,7 +224,7 @@
     
     <tr>
         <td>name</td>
-        <td></td>
+        <td>servidor</td>
     </tr>
     
     
@@ -281,17 +238,8 @@
     
     
     <tr>
-        <td>source</td>
-        <td><a href='d49311473bb182b51bc787308c3dc295.html'><span class='node-icon staruml-icon icon-UMLState'></span>Subasta abierta</a></td>
-    </tr>
-    
-    
-    
-    
-    
-    <tr>
-        <td>target</td>
-        <td><a href='91d93871a1c391f7e7782e1c4b3be99b.html'><span class='node-icon staruml-icon icon-UMLState'></span>Subasta cerrada</a></td>
+        <td>reference</td>
+        <td><a href='9b30f3d88de336899dec77a9229319d3.html'><span class='node-icon staruml-icon icon-UMLNode'></span>Servidor</a></td>
     </tr>
     
     
@@ -300,7 +248,7 @@
     
     <tr>
         <td>stereotype</td>
-        <td><span class='label label-info'>null</span></td>
+        <td></td>
     </tr>
     
     
@@ -317,8 +265,8 @@
     
     
     <tr>
-        <td>kind</td>
-        <td>external</td>
+        <td>navigable</td>
+        <td>unspecified</td>
     </tr>
     
     
@@ -326,13 +274,92 @@
     
     
     <tr>
-        <td>guard</td>
-        <td>pujas.size&gt;0</td>
+        <td>aggregation</td>
+        <td>none</td>
     </tr>
     
     
     
     
+    
+    <tr>
+        <td>multiplicity</td>
+        <td></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>defaultValue</td>
+        <td></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isReadOnly</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isOrdered</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isUnique</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isDerived</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isID</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>qualifiers</td>
+        <td>
+            
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>ownerAttribute</td>
+        <td><span class='label label-info'>null</span></td>
+    </tr>
     
     
     

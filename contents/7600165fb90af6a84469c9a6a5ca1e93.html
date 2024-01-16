@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>pujar(usuario,importe)</title>
+    <title>servidor</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,15 +19,17 @@
 
       <!-- Name Title -->
 
-      <h1>pujar(usuario,importe)</h1>
+      <h1>servidor</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLEvent"></span>
-          UMLEvent
+          <span class="node-icon staruml-icon icon-UMLAssociationEnd"></span>
+          UMLAssociationEnd
         </span>
+        
+          <span style="margin-left: 10px" class="alert alert-info">«»</span>
         
       </section>
 
@@ -41,22 +43,19 @@
           <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>HandyHelp</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='3dbe7125716602b9ba1df3d6017b5835.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Diseño</a></span>
+          <span class="label label-info"><a href='5b06b48b20b55504efe9a4ec8df83341.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Arquitectura</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='67955e48a8ea1d5f3609344192e2b47a.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Subasta</a></span>
+          <span class="label label-info"><a href='a36bcccbabbfe4334c1dff13531ba188.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Despliegue</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='d630c9ac6beff9889145907ff07454a7.html'><span class='node-icon staruml-icon icon-UMLStateMachine'></span>StateMachine</a></span>
+          <span class="label label-info"><a href='6d0bdf1aa580b1d69038bf4d321baec4.html'><span class='node-icon staruml-icon icon-UMLNode'></span>Usuario</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='4d49aac229c30a3ef0be188372a04f61.html'><span class='node-icon staruml-icon icon-UMLRegion'></span>(Region)</a></span>
+          <span class="label label-info"><a href='ab6070322997dd4def6f39cfda81d7db.html'><span class='node-icon staruml-icon icon-UMLCommunicationPath'></span>(Usuario—Servidor)</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='e6b4e60424558ef795957924a8655c9a.html'><span class='node-icon staruml-icon icon-UMLTransition'></span>(Subasta abierta→Subasta abierta)</a></span>
-        
-          <span>::</span>
-          <span class="label label-info"><a href='0cf2a90da2290b686b64c4e74d5e830e.html'><span class='node-icon staruml-icon icon-UMLEvent'></span>pujar(usuario,importe)</a></span>
+          <span class="label label-info"><a href='7600165fb90af6a84469c9a6a5ca1e93.html'><span class='node-icon staruml-icon icon-UMLAssociationEnd'></span>servidor</a></span>
         
       </section>
 
@@ -225,7 +224,7 @@
     
     <tr>
         <td>name</td>
-        <td>pujar(usuario,importe)</td>
+        <td>servidor</td>
     </tr>
     
     
@@ -239,8 +238,17 @@
     
     
     <tr>
+        <td>reference</td>
+        <td><a href='9b30f3d88de336899dec77a9229319d3.html'><span class='node-icon staruml-icon icon-UMLNode'></span>Servidor</a></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
         <td>stereotype</td>
-        <td><span class='label label-info'>null</span></td>
+        <td></td>
     </tr>
     
     
@@ -256,11 +264,9 @@
     
     
     
-    
-    
     <tr>
-        <td>kind</td>
-        <td>call</td>
+        <td>navigable</td>
+        <td>unspecified</td>
     </tr>
     
     
@@ -268,7 +274,25 @@
     
     
     <tr>
-        <td>value</td>
+        <td>aggregation</td>
+        <td>none</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>multiplicity</td>
+        <td>1</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>defaultValue</td>
         <td></td>
     </tr>
     
@@ -277,8 +301,8 @@
     
     
     <tr>
-        <td>expression</td>
-        <td></td>
+        <td>isReadOnly</td>
+        <td><span class='label label-info'>false</span></td>
     </tr>
     
     
@@ -286,8 +310,8 @@
     
     
     <tr>
-        <td>targetOperation</td>
-        <td><a href='92f024723398e98e87830ec531f2db47.html'><span class='node-icon staruml-icon icon-UMLOperation'></span>pujar</a></td>
+        <td>isOrdered</td>
+        <td><span class='label label-info'>false</span></td>
     </tr>
     
     
@@ -295,7 +319,45 @@
     
     
     <tr>
-        <td>targetSignal</td>
+        <td>isUnique</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isDerived</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isID</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>qualifiers</td>
+        <td>
+            
+        </td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>ownerAttribute</td>
         <td><span class='label label-info'>null</span></td>
     </tr>
     
@@ -310,18 +372,6 @@
       
 
       <!-- Constraints, Dependencies, Dependants -->
-
-      
-        
-        
-
-
-        
-        
-
-
-        
-        
 
       
 
